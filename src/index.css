@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Sora:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Cyberpunk-Mythic Design System for Sigil NFT */
+
+@layer base {
+  :root {
+    /* Core Cyberpunk Colors */
+    --bg-void: 220 27% 7%;        /* #0B0E12 */
+    --bg-card: 220 22% 11%;       /* #121620 */
+    --text-base: 220 25% 92%;     /* #E8EEF8 */
+    
+    /* Neon Accents */
+    --crimson: 355 100% 64%;      /* #FF445A */
+    --azure: 202 100% 61%;        /* #3AB7FF */
+    --gold: 46 87% 62%;           /* #F2C94C */
+    --violet: 258 85% 76%;        /* #9B87F5 */
+    --tech-cyan: 189 94% 56%;     /* #22D3EE */
+    --brand-green: 79 100% 65%;   /* #AFFC4F */
+    
+    /* Semantic Design Tokens */
+    --background: var(--bg-void);
+    --foreground: var(--text-base);
+    --card: var(--bg-card);
+    --card-foreground: var(--text-base);
+    --primary: var(--brand-green);
+    --primary-foreground: 0 0% 0%;
+    --secondary: var(--bg-card);
+    --secondary-foreground: var(--text-base);
+    --accent: var(--brand-green);
+    --accent-foreground: 0 0% 0%;
+    --muted: 220 15% 25%;
+    --muted-foreground: 220 15% 65%;
+    --border: var(--brand-green);
+    --input: 220 15% 15%;
+    --ring: var(--brand-green);
+    --destructive: var(--crimson);
+    --destructive-foreground: 0 0% 100%;
+    
+    /* Glows and Effects */
+    --glow-crimson: 355 100% 64% / 0.3;
+    --glow-azure: 202 100% 61% / 0.3;
+    --glow-gold: 46 87% 62% / 0.3;
+    --glow-violet: 258 85% 76% / 0.3;
+    --glow-cyan: 189 94% 56% / 0.3;
+    --glow-green: 79 100% 65% / 0.3;
+    
+    /* Gradients */
+    --gradient-sigil: linear-gradient(135deg, hsl(var(--brand-green)), hsl(var(--violet)));
+    --gradient-hero: linear-gradient(180deg, hsl(var(--bg-void)), hsl(220 30% 5%));
+    --gradient-card: linear-gradient(145deg, hsl(var(--bg-card)), hsl(220 25% 8%));
+    --gradient-neon: linear-gradient(90deg, hsl(var(--brand-green)), hsl(var(--tech-cyan)));
+    
+    /* Shadows */
+    --shadow-glow: 0 0 20px hsl(var(--glow-green)), 0 0 40px hsl(var(--glow-green));
+    --shadow-glow-primary: 0 0 40px hsl(var(--primary) / 0.4);
+    --shadow-glow-foreground: 0 0 30px hsl(var(--foreground) / 0.3);
+    --shadow-card: 0 8px 32px hsl(220 50% 4% / 0.8);
+    --shadow-elevated: 0 20px 60px hsl(220 50% 4% / 0.9);
+    
+    /* Border Radius */
+    --radius: 0.75rem;
+    --radius-lg: 1rem;
+    --radius-xl: 1.5rem;
+    
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-glow: box-shadow 0.3s ease-out, transform 0.2s ease-out;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Cyberpunk scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: hsl(var(--bg-card));
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: hsl(var(--brand-green));
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--brand-green));
+  }
+}
+
+@layer components {
+  /* Accessibility improvements */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+
+  /* Focus styles for better accessibility */
+  .focus-visible:focus-visible {
+    @apply outline-none ring-2 ring-azure ring-offset-2 ring-offset-background;
+  }
+}
+
+/* Logo animations */
+@keyframes logo-float {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-2px) rotate(1deg); }
+}
+
+@keyframes logo-glow-pulse {
+  0%, 100% { filter: drop-shadow(0 0 8px rgba(175, 252, 79, 0.4)); }
+  50% { filter: drop-shadow(0 0 16px rgba(175, 252, 79, 0.8)) drop-shadow(0 0 24px rgba(0, 245, 255, 0.4)); }
+}
+
+.animate-logo-float {
+  animation: logo-float 3s ease-in-out infinite;
+}
+
+.animate-glow-pulse {
+  animation: logo-glow-pulse 2s ease-in-out infinite;
+}
+
+.animate-logo-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.animate-logo-hover:hover {
+  transform: scale(1.05) rotate(5deg);
+  filter: drop-shadow(0 0 20px rgba(175, 252, 79, 0.6)) drop-shadow(0 0 30px rgba(0, 245, 255, 0.4));
+}
+
+/* Gradient text effect for brand name */
+.gradient-text {
+  background: linear-gradient(135deg, #00F5FF 0%, #AFFC4F 50%, #FF6B9D 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradient-shift 3s ease-in-out infinite;
+}
+
+@keyframes gradient-shift {
+  0%, 100% { filter: hue-rotate(0deg); }
+  50% { filter: hue-rotate(10deg); }
+}
+
+/* Enhanced Lightning Animations */
+@keyframes lightning-pulse {
+  0%, 100% { 
+    transform: scale(1) rotate(0deg);
+    filter: drop-shadow(0 0 8px hsl(var(--azure) / 0.4));
+  }
+  50% { 
+    transform: scale(1.05) rotate(2deg);
+    filter: drop-shadow(0 0 16px hsl(var(--tech-cyan) / 0.6)) drop-shadow(0 0 24px hsl(var(--brand-green) / 0.4));
+  }
+}
+
+@keyframes lightning-flicker {
+  0%, 90%, 100% { opacity: 1; }
+  5%, 15%, 25%, 35%, 45% { opacity: 0.8; }
+  10%, 20%, 30%, 40% { opacity: 0.95; }
+}
+
+@keyframes lightning-inner {
+  0%, 100% { opacity: 0.8; transform: translateY(0px); }
+  50% { opacity: 1; transform: translateY(-1px); }
+}
+
+@keyframes spark-1 {
+  0%, 100% { opacity: 0.7; transform: scale(1); }
+  25% { opacity: 1; transform: scale(1.5); }
+  50% { opacity: 0.3; transform: scale(0.8); }
+  75% { opacity: 0.9; transform: scale(1.2); }
+}
+
+@keyframes spark-2 {
+  0%, 100% { opacity: 0.6; transform: scale(1) rotate(0deg); }
+  33% { opacity: 1; transform: scale(1.3) rotate(120deg); }
+  66% { opacity: 0.4; transform: scale(0.9) rotate(240deg); }
+}
+
+@keyframes aura-pulse {
+  0%, 100% { 
+    opacity: 0.3; 
+    transform: scale(1);
+  }
+  50% { 
+    opacity: 0.6; 
+    transform: scale(1.1);
+  }
+}
+
+.animate-lightning-pulse {
+  animation: lightning-pulse 2s ease-in-out infinite;
+}
+
+.animate-lightning-flicker {
+  animation: lightning-flicker 3s ease-in-out infinite;
+}
+
+.animate-lightning-inner {
+  animation: lightning-inner 1.5s ease-in-out infinite;
+}
+
+.animate-spark-1 {
+  animation: spark-1 2.5s ease-in-out infinite;
+}
+
+.animate-spark-2 {
+  animation: spark-2 3s ease-in-out infinite 0.5s;
+}
+
+.animate-aura-pulse {
+  animation: aura-pulse 2s ease-in-out infinite;
+}
+
+/* Additional Lightning Enhancement Animations */
+@keyframes lightning-ridge {
+  0%, 100% { opacity: 0.7; transform: translateX(0px); }
+  50% { opacity: 1; transform: translateX(1px); }
+}
+
+@keyframes tendril-flicker {
+  0%, 80%, 100% { opacity: 0.6; }
+  10%, 30%, 50% { opacity: 1; }
+  20%, 40%, 60% { opacity: 0.3; }
+}
+
+@keyframes aura-secondary {
+  0%, 100% { 
+    opacity: 0.2; 
+    transform: scale(1) rotate(0deg);
+  }
+  50% { 
+    opacity: 0.4; 
+    transform: scale(1.05) rotate(180deg);
+  }
+}
+
+.animate-lightning-ridge {
+  animation: lightning-ridge 1.8s ease-in-out infinite;
+}
+
+.animate-tendril-flicker {
+  animation: tendril-flicker 2.5s ease-in-out infinite;
+}
+
+.animate-aura-secondary {
+  animation: aura-secondary 3s ease-in-out infinite;
+}
