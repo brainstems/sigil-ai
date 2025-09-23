@@ -38,15 +38,15 @@ const CollectiveMemory = () => {
             </div>
             
             <h2 className="font-display font-bold text-4xl md:text-5xl lg:text-6xl text-foreground mb-6 leading-tight">
-              From Sigil to Activator to{" "}
+              From NFT to Soulbound Identity to{" "}
               <span className="relative inline-block text-primary">
-                Collective Memory
+                Activator agent
                 <div className="absolute -inset-1 bg-primary/10 blur-xl animate-pulse opacity-50" />
               </span>
             </h2>
             
             <p className="font-body text-lg md:text-xl text-muted-foreground leading-relaxed mb-8">
-              Your Sigil mints an Activator (SBT). You infuse human dimensions. Enterprises add <span className="text-azure font-semibold bg-azure/10 px-2 py-1 rounded-lg">Seals</span> that prove engagement. Together, they power collective memory markets.
+              Your NFT mints a Soulbound identity and personal agent-- an Activator. You infuse human dimensions. Enterprises add <span className="text-azure font-semibold bg-azure/10 px-2 py-1 rounded-lg">Seals</span> that prove engagement. Together, they power collective memory markets.
             </p>
           </div>
 
