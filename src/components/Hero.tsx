@@ -161,7 +161,7 @@ const Hero = () => {
                   className="w-full h-auto rounded-2xl shadow-md group-hover:opacity-90 transition"
                 />
                 <h4 className="mt-4 font-heading font-semibold text-lg text-foreground group-hover:text-azure transition">
-                  Contribute to collective memory
+                  Contribute to your Personal Language Model
                 </h4>
               </a>
               {/* Item 2 */}
