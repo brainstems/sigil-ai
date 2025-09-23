@@ -42,7 +42,7 @@ const roadmapSteps = [
     status: "pending",
     date: "Q2 2026",
     icon: Shield,
-    features: ["Enterprise partnerships", "Seal verification", "Value attribution", "Enterprise rewards],
+    features: ["Enterprise partnerships", "Seal verification", "Value attribution", "Enterprise rewards"],
     progress: 35
   },
     {
