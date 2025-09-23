@@ -36,6 +36,48 @@ const IntellexStack = () => {
             </p>
           </div>
 
+                   {/* Enhanced Process Flow */}
+          <div className="mb-16">
+            <h3 className="font-display font-bold text-3xl md:text-4xl text-foreground mb-8 drop-shadow-md">
+              The Intellex Ecosystem
+            </h3>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
+              {/* Item 1 */}
+              <a href="#" className="group block">
+                <img
+                  src="https://via.placeholder.com/300x200"
+                  alt="Contribute to collective memory"
+                  className="w-full h-auto rounded-2xl shadow-md group-hover:opacity-90 transition"
+                />
+                <h4 className="mt-4 font-heading font-semibold text-lg text-foreground group-hover:text-azure transition">
+                  Contribute to your Personal Language Model
+                </h4>
+              </a>
+              {/* Item 2 */}
+              <a href="#" className="group block">
+                <img
+                  src="https://via.placeholder.com/300x200"
+                  alt="Activate your agent"
+                  className="w-full h-auto rounded-2xl shadow-md group-hover:opacity-90 transition"
+                />
+                <h4 className="mt-4 font-heading font-semibold text-lg text-foreground group-hover:text-azure transition">
+                  Activate your agent
+                </h4>
+              </a>
+              {/* Item 3 */}
+              <a href="#" className="group block">
+                <img
+                  src="https://via.placeholder.com/300x200"
+                  alt="Enable agent interoperability"
+                  className="w-full h-auto rounded-2xl shadow-md group-hover:opacity-90 transition"
+                />
+                <h4 className="mt-4 font-heading font-semibold text-lg text-foreground group-hover:text-azure transition">
+                  Enable agent interoperability
+                </h4>
+              </a>
+            </div>
+          </div>
+
           {/* Body */}
           <div className="text-center mb-16">
             <div className="bg-gradient-to-br from-card/60 via-background/80 to-card/60 border border-primary/20 backdrop-blur-sm rounded-3xl p-8 shadow-2xl hover:shadow-primary/20 transition-all duration-500">
