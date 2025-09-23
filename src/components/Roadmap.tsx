@@ -6,54 +6,54 @@ import { CheckCircle, Circle, Clock, Mail, Zap, Trophy, Shield, Users, Target, R
 const roadmapSteps = [
   {
     id: 1,
-    title: "TGE",
-    description: "Token Generation Event - Foundation launch",
+    title: "TGE & NFT Mint",
+    description: "Token Generation Event",
     status: "completed",
-    date: "Q4 2024",
+    date: "Q4 2025",
     icon: CheckCircle,
-    features: ["Token distribution", "Initial ecosystem launch", "Community formation"],
+    features: ["Token distribution", "NFT mint", "Community formation"],
     progress: 100
   },
   {
     id: 2,
-    title: "Redemption Live",
-    description: "Sigil to Activator conversion platform goes live",
+    title: "Collective Memory Generation",
+    description: "Generative AI built on combined memories of brand engagement",
     status: "upcoming",
-    date: "Q1 2025",
+    date: "Q4 2025",
     icon: Rocket,
     countdown: true,
-    features: ["Conversion portal", "Badge activation", "Energy infusion"],
+    features: ["Memory collection", "Memory generation", "Business engagement"],
     progress: 85
   },
   {
     id: 3,
-    title: "Badge Infusions",
-    description: "Human dimension activation and capability discovery",
+    title: "Personal Language Model (PLM) Building",
+    description: "Human dimensions injected into Personal Language Models",
     status: "pending",
-    date: "Q2 2025",
+    date: "Q1 2026",
     icon: Zap,
-    features: ["20 badge types", "Personal energy connection", "Capability verification"],
+    features: ["PLM building", "Personal energy connection", "Capability verification"],
     progress: 0
   },
   {
     id: 4,
-    title: "First Seals",
+    title: "First Fusion",
     description: "Enterprise verification and endorsement system",
     status: "pending",
-    date: "Q2 2025",
+    date: "Q2 2026",
     icon: Shield,
-    features: ["Enterprise partnerships", "Seal verification", "Value attribution"],
-    progress: 0
+    features: ["Enterprise partnerships", "Seal verification", "Value attribution", "Enterprise rewards],
+    progress: 35
   },
-  {
+    {
     id: 5,
-    title: "Cross-sector Quests",
-    description: "Multi-badge challenges and enterprise rewards",
+    title: "Agent activations",
+    description: "PLM powers personal agents-Activators",
     status: "pending",
-    date: "Q3 2025",
+    date: "Q1 2026",
     icon: Target,
-    features: ["Quest system", "Reward distribution", "Cross-sector validation"],
-    progress: 0
+    features: ["Personal agents", "Enterprise negotiation", "Reward distribution"],
+    progress: 45
   },
 ];
 
@@ -66,7 +66,7 @@ const Roadmap = () => {
   });
 
   // Countdown to Q1 2025 (estimated: March 1, 2025)
-  const targetDate = new Date('2025-01-15T00:00:00Z').getTime();
+  const targetDate = new Date('2026-01-15T00:00:00Z').getTime();
 
   useEffect(() => {
     const updateCountdown = () => {
