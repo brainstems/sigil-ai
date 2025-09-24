@@ -82,11 +82,10 @@ const IntellexStack = () => {
           <div className="text-center mb-16">
             <div className="bg-gradient-to-br from-card/60 via-background/80 to-card/60 border border-primary/20 backdrop-blur-sm rounded-3xl p-8 shadow-2xl hover:shadow-primary/20 transition-all duration-500">
               <p className="font-body text-lg text-muted-foreground leading-relaxed">
-                Intellex is the interoperability layer where agents share portable, permissioned memory--remembering state, reputation and expertise. A provenance DAG grounded in a blockchain ledger that 
-                tracks who owns or licenses each memory object. 
-                An agentic layer that track policies, enforces permissions, routes to the right model, and emits verifiable attestations. 
+                The Intellex Protocl delivers cross-blockchain agent interoperability and coordination management for enterprise customers through managing collective memory.  Agents share portable, permissioned memory--remembering state, reputation and expertise. 
+                The Intellex interoperability layer tracka policies, enforces permissions, routes to the right model, and emits verifiable attestations. 
                 Infrastructure agents handle registry, licensing, metering/royalties, federation, 
-                and cross-chain bridging—so memory remains portable and governed across enterprises, and between enterprises and consumers
+                and cross-chain bridging—so memory remains portable and governed across enterprises, and between enterprises and consumers.
               </p>
             </div>
           </div>
