@@ -159,7 +159,7 @@ const Hero = () => {
               >
                 <div className="absolute -inset-1 bg-gradient-to-r from-primary to-accent rounded-2xl blur opacity-0 group-hover:opacity-30 transition-opacity duration-500" />
                 <span className="relative flex items-center gap-2">
-                  Start Your Journey
+                  Start Your Training
                   <Play className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
                 </span>
               </Button>
