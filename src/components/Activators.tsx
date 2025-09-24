@@ -261,7 +261,7 @@ const Activators = () => {
 
               <div className="text-center group">
                 <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-violet/10 border border-violet/20 mb-4 group-hover:scale-110 transition-transform duration-300">
-                  <span className="font-display font-bold text-2xl text-violet">WHAT</span>
+                  <span className="font-display font-bold text-xl text-violet">WHAT</span>
                 </div>
                 <h4 className="font-display font-bold text-lg text-foreground mb-2">
                   We make the interop layer for AI agents

@@ -37,39 +37,39 @@ const IntellexStack = () => {
           </div>
 
                    {/* Enhanced Process Flow */}
-          <div className="mb-16">
+          <div className="mb-16 text-center">
             <h3 className="font-display font-bold text-3xl md:text-4xl text-foreground mb-8 drop-shadow-md">
               The Intellex Ecosystem
             </h3>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
               {/* Item 1 */}
-              <a href="#" className="group block">
+              <a href="#" className="group block text-center">
                 <img
-                  src="https://via.placeholder.com/300x200"
+                  src="/intellex-1.png"
                   alt="Contribute to collective memory"
-                  className="w-full h-auto rounded-2xl shadow-md group-hover:opacity-90 transition"
+                  className="w-full h-auto rounded-2xl shadow-md group-hover:opacity-90 transition mx-auto"
                 />
                 <h4 className="mt-4 font-heading font-semibold text-lg text-foreground group-hover:text-azure transition">
                   Contribute to your Personal Language Model
                 </h4>
               </a>
               {/* Item 2 */}
-              <a href="#" className="group block">
+              <a href="#" className="group block text-center">
                 <img
-                  src="https://via.placeholder.com/300x200"
+                  src="/intellex-2.png"
                   alt="Activate your agent"
-                  className="w-full h-auto rounded-2xl shadow-md group-hover:opacity-90 transition"
+                  className="w-full h-auto rounded-2xl shadow-md group-hover:opacity-90 transition mx-auto"
                 />
                 <h4 className="mt-4 font-heading font-semibold text-lg text-foreground group-hover:text-azure transition">
                   Activate your agent
                 </h4>
               </a>
               {/* Item 3 */}
-              <a href="#" className="group block">
+              <a href="#" className="group block text-center">
                 <img
-                  src="https://via.placeholder.com/300x200"
+                  src="/intellex-3.png"
                   alt="Enable agent interoperability"
-                  className="w-full h-auto rounded-2xl shadow-md group-hover:opacity-90 transition"
+                  className="w-full h-auto rounded-2xl shadow-md group-hover:opacity-90 transition mx-auto"
                 />
                 <h4 className="mt-4 font-heading font-semibold text-lg text-foreground group-hover:text-azure transition">
                   Enable agent interoperability

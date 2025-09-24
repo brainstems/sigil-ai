@@ -1,6 +1,7 @@
 import Navigation from "@/components/Navigation";
 import Learn from "@/components/Learn";
 import Hero from "@/components/Hero";
+import Activators from "@/components/Activators";
 import BadgeGallery from "@/components/BadgeGallery";
 import Seals from "@/components/Seals";
 import EnterpriseBinding from "@/components/EnterpriseBinding";
@@ -21,6 +22,7 @@ const Index = () => {
       <Hero />
       <IntellexStack />
       <Learn />
+      <Activators />
       <BadgeGallery />
       <Seals />
       <EnterpriseBinding />

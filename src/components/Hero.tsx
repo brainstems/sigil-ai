@@ -168,7 +168,7 @@ const Hero = () => {
                 variant="outline"
                 size="lg" 
                 className="group relative bg-gradient-to-r from-card/80 to-card/60 border-primary/40 text-foreground font-semibold px-8 py-4 text-lg rounded-2xl backdrop-blur-sm hover:from-primary/10 hover:to-accent/10 hover:border-primary/60 hover:shadow-lg hover:shadow-primary/20 transition-all duration-300 hover:scale-105"
-                onClick={() => window.open('/litepaper.pdf', '_blank')}
+                onClick={() => window.open('/whitepaper.pdf', '_blank')}
               >
                 <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-accent/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 <span className="relative flex items-center gap-2">
