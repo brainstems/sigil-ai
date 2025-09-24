@@ -38,7 +38,7 @@ const Activators = () => {
     },
     {
       title: "Top-up Coverage",
-      description: "Periodic $ITLX for storage proofs, FL updates, coordination",
+      description: "Periodic $ITLX for storage proofs, fused Collective Memory, coordination",
       icon: Shield,
       color: "crimson"
     }
@@ -194,7 +194,7 @@ const Activators = () => {
                   3. Lease to Enterprise
                 </h3>
                 <p className="font-body text-muted-foreground">
-                  B2B2C monetization
+                  Personal Language Model monetization
                 </p>
               </div>
 
@@ -230,7 +230,7 @@ const Activators = () => {
           <div className="bg-gradient-to-br from-card/60 via-background/80 to-card/60 border border-primary/20 backdrop-blur-sm rounded-3xl p-8 shadow-2xl">
             <div className="text-center mb-8">
               <h3 className="font-display font-bold text-2xl text-foreground mb-4">
-                Why This Fits Our Golden Circle
+                Why This Matters
               </h3>
             </div>
 
@@ -243,7 +243,7 @@ const Activators = () => {
                   Coordinate without giving up control
                 </h4>
                 <p className="font-body text-sm text-muted-foreground">
-                  $ITLX powers rails that coordinate agents without sharing data; the currency aligns with the purpose.
+                  $ITLX powers rails that coordinate agents without revaling who you are; the currency aligns with the purpose.
                 </p>
               </div>
 
