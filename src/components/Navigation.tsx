@@ -88,7 +88,7 @@ const Navigation = () => {
               />
             </div>
             <span className="font-display font-black text-2xl text-primary tracking-tight" style={{ fontWeight: 1000 }}>
-              Sigil
+              PLM Activation
             </span>
           </div>
 
