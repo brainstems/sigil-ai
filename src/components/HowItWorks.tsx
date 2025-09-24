@@ -1,15 +1,15 @@
 import { useState } from "react";
 import { Card } from "@/components/ui/card";
-import { Zap, Link, Lightbulb, Shield } from "lucide-react";
+import { Zap, Link, Library, Lightbulb, Shield } from "lucide-react";
 
 const steps = [
   {
     id: 1,
-    icon: Zap,
-    title: "Redeem your NFT",
-    subtitle: "Turn your Sigil into a living Activator.",
-    description: "Burn/lock Sigil to instantiate your Activator- a soulbound Personal Language Model that represents you.",
-    detail: "Transform your NFT into a permanent, non-transferable identity that grows from your intelligence and is valued based on your reputation.",
+    icon: Library,
+    title: "Convert your NFT,
+    subtitle: "Your NFT unlocks a Personal Language Model (PLM).",
+    description: "Burn your NFT and instantiate your Personal Language Model designed to power personal agents--Acctivators",
+    detail: "Transform your NFT into a permanent, non-transferable soulbound Personal Language Model that grows from your intelligence and is valued based on your reputation.",
     color: "crimson",
   },
   {
@@ -17,16 +17,25 @@ const steps = [
     icon: Link,
     title: "Soulbind",
     subtitle: "Lock identity, unlock reputation.",
-    description: "Your Activator becomes a non-transferable identity fused with intelligence, memory and reputation.",
+    description: "Your Personal Language Model is a linked non-transferable identity fused with intelligence, memory and reputation. a soulbound Personal Language Model that represents you.",
     detail: "Create an immutable connection between you and your digital identity, building trust through a verifiable history.",
     color: "azure",
+  },
+    {
+    id: 3,
+    icon: Zap,
+    title: "Power an Activator",
+    subtitle: "Use your Personal Langage Model to manage autonomous agents.",
+    description: "Enfuse your personal agent-- an Activator-- with your Personal Language Model to represent you.",
+    detail: "The intelligence of your Personal Language Model can be put to work powering Activators to perform tasks as you engage with global businesses.",
+    color: "rebeccapurple",
   },
   {
     id: 3,
     icon: Lightbulb,
     title: "Infuse Badges",
-    subtitle: "Light up human intelligence.",
-    description: "Build a Personal Language Model with specific capabilities (Driver, Drinker, Shopper…). \"Infused\" = ready to be put to work.",
+    subtitle: "Extend the human intelligence.",
+    description: "Cultivate your Personal Language Model with specific capabilities (Driver, Drinker, Shopper…). \"Infused\" = ready to be put to work.",
     detail: "Activate your unique human capabilities as verifiable badges that enterprises can recognize and value.",
     color: "gold",
   },
