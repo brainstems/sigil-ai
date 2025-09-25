@@ -50,7 +50,7 @@ const Footer = () => {
                  className="w-auto h-8"
                />
                <span className="font-display font-black text-2xl text-primary" style={{ fontWeight: 900 }}>
-                 Sigil
+                 PLM Activation
                </span>
              </div>
             
