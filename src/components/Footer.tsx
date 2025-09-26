@@ -76,7 +76,7 @@ const Footer = () => {
               </a>
               
               <a
-                href="https://t.me/intellex_activators"
+                href="https://t.me/intellex_xyz"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-card/50 rounded-lg border border-border/20 flex items-center justify-center hover:bg-primary/10 hover:border-primary/20 transition-all duration-300 cursor-pointer group"
