@@ -50,7 +50,7 @@ const roadmapSteps = [
     title: "Agent activations",
     description: "PLM powers personal agents-Activators",
     status: "pending",
-    date: "Q1 2026",
+    date: "Q3 2026",
     icon: Target,
     features: ["Personal agents", "Enterprise negotiation", "Reward distribution"],
     progress: 45
